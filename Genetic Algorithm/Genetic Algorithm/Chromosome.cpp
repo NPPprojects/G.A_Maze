@@ -87,58 +87,58 @@ void Chromosome::Update(Maze* MyMaze, std::vector<std::vector<int>>MAZEarray, st
     CHRgene = 0;
   
     //Set DeadSpot
-    if (SYSgenerationCounter<300)
-    {
-      if (MyMaze->GetCHRXCP() != MyMaze->GetCHRXEP()|| MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1)
-      {
-        MyMaze->SetDeadSpotX(MyMaze->GetCHRXCP());
-      }
-      if (MyMaze->GetCHRYCP() != MyMaze->GetCHRYEP()|| MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1)
-      {
-        MyMaze->SetDeadSpotY(MyMaze->GetCHRYCP());
-      }
-   MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] = 5;
-   if (MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] == 5)
-   {
-     std::cout << "Marked" << std::endl;
+   // if (SYSgenerationCounter<300)
+   // {
+   //   if (MyMaze->GetCHRXCP() != MyMaze->GetCHRXEP()|| MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1)
+   //   {
+   //     MyMaze->SetDeadSpotX(MyMaze->GetCHRXCP());
+   //   }
+   //   if (MyMaze->GetCHRYCP() != MyMaze->GetCHRYEP()|| MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1)
+   //   {
+   //     MyMaze->SetDeadSpotY(MyMaze->GetCHRYCP());
+   //   }
+   //MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] = 5;
+   //if (MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] == 5)
+   //{
+   //  std::cout << "Marked" << std::endl;
 
-     for (int y = 0; y < 10; y++)
-     {
-       for (int x = 0; x < 10; x++)
-       {
-         std::cout << MAZEarray[x][y] << " ";
-       }
-       std::cout << std::endl;
-     }
-   }
+   //  for (int y = 0; y < 10; y++)
+   //  {
+   //    for (int x = 0; x < 10; x++)
+   //    {
+   //      std::cout << MAZEarray[x][y] << " ";
+   //    }
+   //    std::cout << std::endl;
+   //  }
+   //}
 
-    }
-    if (SYSgenerationCounter>300 && SYSgenerationCounter<600)
-    {
-      if (MyMaze->GetCHRXCP() != MyMaze->GetCHRXEP() || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1 || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 6)
-      {
-        MyMaze->SetDeadSpotX(MyMaze->GetCHRXCP());
-      }
-      if (MyMaze->GetCHRYCP() != MyMaze->GetCHRYEP() || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1 || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 6)
-      {
-        MyMaze->SetDeadSpotY(MyMaze->GetCHRYCP());
-      }
-      MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] = 6;
-      if (MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] == 6)
-      {
-        std::cout << "Marked" << std::endl;
+   // }
+   // if (SYSgenerationCounter>300 && SYSgenerationCounter<600)
+   // {
+   //   if (MyMaze->GetCHRXCP() != MyMaze->GetCHRXEP() || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1 || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 6)
+   //   {
+   //     MyMaze->SetDeadSpotX(MyMaze->GetCHRXCP());
+   //   }
+   //   if (MyMaze->GetCHRYCP() != MyMaze->GetCHRYEP() || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 1 || MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] != 6)
+   //   {
+   //     MyMaze->SetDeadSpotY(MyMaze->GetCHRYCP());
+   //   }
+   //   MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] = 6;
+   //   if (MAZEarray[MyMaze->GetDeadSpotX()][MyMaze->GetDeadSpotY()] == 6)
+   //   {
+   //     std::cout << "Marked" << std::endl;
 
-        for (int y = 0; y < 10; y++)
-        {
-          for (int x = 0; x < 10; x++)
-          {
-            std::cout << MAZEarray[x][y] << " ";
-          }
-          std::cout << std::endl;
-        }
-      }
+   //     for (int y = 0; y < 10; y++)
+   //     {
+   //       for (int x = 0; x < 10; x++)
+   //       {
+   //         std::cout << MAZEarray[x][y] << " ";
+   //       }
+   //       std::cout << std::endl;
+   //     }
+   //   }
 
-    }
+   // }
     
       Fitness_calculation(MyMaze, MAZEarray, CHRXoffset, CHRYoffset, CHRfitness, CHRgenerationFitnessTotal, i);
     
@@ -466,54 +466,54 @@ void Chromosome::Fitness_calculation(Maze* MyMaze, std::vector<std::vector<int>>
   {
     CHRYoffset[i] = CHRYoffset[i] * -1;
   }
-  if (SYSgenerationCounter < 300)
-  {
-    CHRfitness[i] = CHRXoffset[i] + CHRYoffset[i] + 1;
-    if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 2)
-    {
-      std::cout << "Landed on the start" << std::endl;
-      CHRfitness[i] = 5000;
-    }
-  }
-  if (SYSgenerationCounter > 300)
-  {
-    if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] ==5)
-    {
-      std::cout << "Landed on a deadpost" << std::endl;
-      CHRfitness[i] = 5000;
-    }
-    else  if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 0)
-    {
-      std::cout << "////////////////////////////////////////////////////////////Landed on a new Spot" << std::endl;
- //     MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] = 6;
-      CHRfitness[i] = CHRXoffset[i] + CHRYoffset[i]+1;
-    }
-    else  if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 2)
-    {
-      std::cout << "Landed on the start" << std::endl;
-       CHRfitness[i] = 5000;
-    }
-    else if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 6)
-     {
-        
-        if (SYSgenerationCounter < 600)
-        {
-          std::cout << "////////////////////////////////////////////////////////////Landed on a new deadpost" << std::endl;
-          CHRfitness[i] = (CHRXoffset[i] + CHRYoffset[i] + 1) * 15;
-        }
-        else if (SYSgenerationCounter > 600)
-        {
-          std::cout << "////////////////////////////////////////////////////////////Landed on a new deadpost AND PUNISHED" << std::endl;
-          CHRfitness[i] = 5000;
-        }
+ // if (SYSgenerationCounter < 300)
+ // {
+ //   CHRfitness[i] = CHRXoffset[i] + CHRYoffset[i] + 1;
+ //   if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 2)
+ //   {
+ //     std::cout << "Landed on the start" << std::endl;
+ //     CHRfitness[i] = 5000;
+ //   }
+ // }
+ // if (SYSgenerationCounter > 300)
+ // {
+ //   if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] ==5)
+ //   {
+ //     std::cout << "Landed on a deadpost" << std::endl;
+ //     CHRfitness[i] = 5000;
+ //   }
+ //   else  if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 0)
+ //   {
+ //     std::cout << "////////////////////////////////////////////////////////////Landed on a new Spot" << std::endl;
+ ////     MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] = 6;
+ //     CHRfitness[i] = CHRXoffset[i] + CHRYoffset[i]+1;
+ //   }
+ //   else  if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 2)
+ //   {
+ //     std::cout << "Landed on the start" << std::endl;
+ //      CHRfitness[i] = 5000;
+ //   }
+ //   else if (MAZEarray[MyMaze->GetCHRXCP()][MyMaze->GetCHRYCP()] == 6)
+ //    {
+ //       
+ //       if (SYSgenerationCounter < 600)
+ //       {
+ //         std::cout << "////////////////////////////////////////////////////////////Landed on a new deadpost" << std::endl;
+ //         CHRfitness[i] = (CHRXoffset[i] + CHRYoffset[i] + 1) * 15;
+ //       }
+ //       else if (SYSgenerationCounter > 600)
+ //       {
+ //         std::cout << "////////////////////////////////////////////////////////////Landed on a new deadpost AND PUNISHED" << std::endl;
+ //         CHRfitness[i] = 5000;
+ //       }
 
-     }
-    }
+ //    }
+ //   }
 
- 
+ //
  
    
- 
+  CHRfitness[i] = CHRXoffset[i] + CHRYoffset[i] + 1;
   CHRfitness[i] = 1 / CHRfitness[i];
   std::cout << "Fitness of Chromosome: ";
   std::cout << CHRfitness[i] << std::endl << std::endl;

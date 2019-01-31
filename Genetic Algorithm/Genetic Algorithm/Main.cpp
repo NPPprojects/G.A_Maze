@@ -16,7 +16,7 @@
 
 clock_t SYSstartTime;
 clock_t SYSendTime;
-std::ifstream* Mazefile = new std::ifstream("Maze10x10.txt");
+std::ifstream* Mazefile = new std::ifstream("MyMaze.txtt");
 
 
 Maze* MyMaze = new Maze(Mazefile);

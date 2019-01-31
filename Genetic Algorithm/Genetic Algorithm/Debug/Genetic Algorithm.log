@@ -1,19 +1,17 @@
 ﻿  Chromosome.cpp
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(22): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(45): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(322): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(326): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(333): warning C4305: 'initializing': truncation from 'double' to 'float'
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(389): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(471): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(489): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(502): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(535): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(544): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(545): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(547): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(641): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(648): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(656): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-d:\year two projects\a.i\genetic algorithm\genetic algorithm\chromosome.cpp(311): warning C4715: 'Chromosome::IndividualSelector': not all control paths return a value
-  Genetic Algorithm.vcxproj -> D:\Year Two Projects\A.I\Genetic Algorithm\Debug\Genetic Algorithm.exe
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(22): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(45): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(322): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(326): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(333): warning C4305: 'initializing': truncation from 'double' to 'float'
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(389): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(516): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(535): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(544): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(545): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(547): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(641): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(648): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(656): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+d:\github\g.a_maze\genetic algorithm\genetic algorithm\chromosome.cpp(311): warning C4715: 'Chromosome::IndividualSelector': not all control paths return a value
+  Genetic Algorithm.vcxproj -> D:\Github\G.A_Maze\Genetic Algorithm\Debug\Genetic Algorithm.exe
